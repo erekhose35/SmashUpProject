@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img class="i" src="images/playmateTitan.jpg" alt="playmateTitan" />
+    <header>
+      <h1>Les Drafts</h1>
+      <button class="button">
+        <a href="./index.html">retour a la page d'accueil</a>
+      </button>
+      <button id="reload" type="button" class="button">
+        Recommencer un nouveau draft
+      </button>
+    </header>
+
+    <nav>
+      <form>
+        <fieldset>
+          <legend>Choisissez les éléments de votre randomizer :</legend>
+          <button type="button" id="selectAll" class="btn-blue right">
+            Tout selectionner
+          </button>
+
+          <input type="checkbox" name="chk-baseSet" id="chkBaseSet" />
+          <label for="chkBaseSet">Jeu de base</label><br />
+
+          <input type="checkbox" name="chk-munchkin" id="chkMunchkin" />
+          <label for="chkMunchkin">Munchkin</label><br />
+
+          <input type="checkbox" name="chk-marvel" id="chkMarvel" />
+          <label for="chkMarvel">Marvel</label><br />
+
+          <input type="checkbox" name="chk-memePasMort" id="chkMemePasMort" />
+          <label for="chkMemePasMort">Même pas mort</label><br />
+
+          <input type="checkbox" name="chk-cthulhu" id="chkCthulhu" />
+          <label for="chkCthulhu">Cthulhu Fhtagn!</label><br />
+
+          <input type="checkbox" name="chk-serieB" id="chkSerieB" />
+          <label for="chkSerieB">Série B</label><br />
+
+          <input type="checkbox" name="chk-monstreSacre" id="chkMonstreSacre" />
+          <label for="chkMonstreSacre">Monstres Sacrés</label><br />
+
+          <input
+            type="checkbox"
+            name="chk-vousLAurezVoulu"
+            id="chkVousLAurezVoulu"
+          />
+          <label for="chkVousLAurezVoulu">Vous l'aurez voulu!</label><br />
+
+          <input type="checkbox" name="chk-minion" id="chkMinion" />
+          <label for="chkMinion">Trop Minions</label><br />
+
+          <input
+            type="checkbox"
+            name="chk-ressemblanceF"
+            id="chkRessemblancesF"
+          />
+          <label for="chkRessemblancesF">Ressemblances Fortuites</label><br />
+
+          <input type="checkbox" name="chk-generation" id="chkGeneration" />
+          <label for="chkGeneration">Conflit de génération</label><br />
+
+          <input type="checkbox" name="chk-japan" id="chkJapan" />
+          <label for="chkJapan">Rois du Japon</label><br />
+
+          <input type="checkbox" name="chk-70th" id="chkYear70th" />
+          <label for="chk70th">Ces années là</label><br />
+
+          <input
+            type="checkbox"
+            name="chk-vousEnVoulezEncore"
+            id="chkVousEnVoulezEncore"
+          />
+          <label for="chkVousEnVoulezEncore">Vous en voulez encore?</label
+          ><br />
+
+          <input type="checkbox" name="chk-WT1" id="chkWT1" />
+          <label for="chkWT1">International incident</label><br />
+
+          <input type="checkbox" name="chk-WT2" id="chkWT2" />
+          <label for="chkWT2">Culture Shock</label><br />
+
+          <input type="checkbox" name="chk-geek" id="chkGeek" />
+          <label for="chkGeek">Les Geeks</label><br />
+
+          <input type="checkbox" name="chk-mouton" id="chkMouton" />
+          <label for="chkMouton">Les Moutons</label><br />
+
+          <input type="checkbox" name="chk-penguin" id="chkPenguin" />
+          <label for="chkPenguin">Les Manchots</label><br />
+
+          <input type="checkbox" name="chk-dreamTeam" id="chkDreamTeam" />
+          <label for="chkDreamTeam">La Dream Team</label><br />
+
+          <input type="checkbox" name="chk-goblins" id="chkGoblins" />
+          <label for="chkGoblins">Les Gobelins</label><br />
+
+          <input type="checkbox" name="chk-roundTable" id="chkRoundTable" />
+          <label for="chkRoundTable">Chevaliers de la Table Ronde</label><br />
+
+          <button type="button" id="create" class="btn-blue right">
+            Créer ma liste
+          </button>
+        </fieldset>
+      </form>
+    </nav>
+    <main>
+      <div>
+        <h2>Drafter en gardant le pick</h2>
+        <p class="indent">
+          <em>
+            Ecrivez le nombre de factions que vous désirez dans votre draft,
+            l'interêt ici étant de réduire le choix avant de choisir vos
+            factions! Rappel de la règle pour une partie a 2 : J1 choisit une
+            faction, J2 choisit 2 factions et J1 choisit une faction. Perso,
+            j'aime bien faire précéder ce choix d'un tour de ban! A vous de
+            trouver le format qui vous convient le mieux
+          </em>
+          &#x1F60F;
+        </p>
+        <form>
+          <label for="nb"
+            >Nombre de faction que vous souhaiter dans votre Draft</label
+          >
+          <input type="text" id="nb" name="nb" />
+          <button type="button" class="btn-blue" id="random">
+            Commencer le randomizer
+          </button>
+        </form>
+        <p id="title"></p>
+        <ul id="liste"></ul>
+      </div>
+      <div>
+        <h2>Draft sans pick</h2>
+        <p class="indent">
+          <em
+            >Ici c'est pour si vous ne souhaitez pas du tout choisir, le hasard
+            total!! Vous avez juste à définir avant qui est le Joueur 1</em
+          >
+          &#x1F631;
+        </p>
+        <form>
+          <label for="players">Choisissez le nombre de joueur</label>
+          <select id="players" name="players">
+            <option value="2">2 joueurs</option>
+            <option value="3">3 joueurs</option>
+            <option value="4">4 joueurs</option>
+          </select>
+          <button id="no-pick" class="btn-blue">Lancer la recherche</button>
+        </form>
+        <p id="title-p1" class="overwritten"></p>
+        <ul id="player1" class="overwritten"></ul>
+        <p id="title-p2" class="overwritten"></p>
+        <ul id="player2" class="overwritten"></ul>
+        <p id="title-p3" class="overwritten"></p>
+        <ul id="player3" class="overwritten"></ul>
+        <p id="title-p4" class="overwritten"></p>
+        <ul id="player4" class="overwritten"></ul>
+      </div>
+    </main>
+    <footer>
+      <h4 class="l">Les liens pour les fans :</h4>
+      <div class="c">
+        <p class="bold">Francophone</p>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/218243058629614"
+              target="_blank"
+              >Facebook : Smash Up France</a
+            >
+          </li>
+          <li>
+            <a href="https://discord.gg/JKYcDPEa" target="_blank"
+              >Discord : Smash Up France</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://smash-up.fandom.com/fr/wiki/Wiki_Smash_Up"
+              target="_blank"
+              >Wiki : Smash Up France</a
+            >
+          </li>
+          <li>
+            <a href="https://iello.fr/fr/fiche/smash-up" target="_blank"
+              >Boutique : Iello</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="r">
+        <p class="bold">Anglophone</p>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/alderac.boardgames.smashup"
+              target="_blank"
+              >Facebook : Smashposting</a
+            >
+          </li>
+          <li>
+            <a href="https://discord.gg/Gs5HPNuy" target="_blank"
+              >Discord : Smash Up</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://smashup.fandom.com/wiki/SmashUp_Wiki"
+              target="_blank"
+              >Wiki : Smash Up
+            </a>
+          </li>
+          <li>
+            <a href="https://alderacstore.com/smash-up/" target="_blank"
+              >Store : AEG</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script/data.js"></script>
+    <script src="script/scriptDraft.js"></script>
+  </body>
+</html>
