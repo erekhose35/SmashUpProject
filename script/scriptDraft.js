@@ -65,6 +65,9 @@ create.addEventListener("click", () => {
       );
     }
   }
+  document.getElementById("create").classList.remove("btn-blue");
+  document.getElementById("create").classList.add("button");
+  create.innerHTML = "Liste créée";
   console.log(factions);
 });
 

@@ -65,6 +65,9 @@ create.addEventListener("click", () => {
       );
     }
   }
+  document.getElementById("create").classList.remove("btn-blue");
+  document.getElementById("create").classList.add("button");
+  create.innerHTML = "List created";
   console.log(factions);
 });
 
@@ -120,17 +123,16 @@ noPick.addEventListener("click", (event) => {
     if (isNaN(nbPlayers)) {
       alert("Choose a player number from the drop-down menu");
     } else {
+      for (let j = 1; j <= 4; j++) {
+        console.log("remove");
+        remove(playersData.get(`titlePlayer${j}`));
+        remove(playersData.get(`player${j}`));
+      }
       for (let i = 1; i <= nbPlayers; i++) {
         console.log(playersData.get(`titlePlayer${i}`));
         console.log(playersData.get(`player${i}`));
         displayPlayers(i, playersData.get(`titlePlayer${i}`));
         arrayRandomConstructor(2, playersData.get(`player${i}`));
-        let indexToRemove = nbPlayers + i;
-        if (indexToRemove + i <= 4) {
-          console.log("remove");
-          remove(playersData.get(`titlePlayer${indexToRemove}`));
-          remove(playersData.get(`player${indexToRemove}`));
-        }
       }
     }
   }
