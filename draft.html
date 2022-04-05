@@ -120,7 +120,7 @@
     </nav>
     <main>
       <div>
-        <h2>Drafter en gardant le pick</h2>
+        <h2>Draft global</h2>
         <p class="indent">
           <em>
             Ecrivez le nombre de factions que vous désirez dans votre draft,
@@ -145,15 +145,23 @@
         <ul id="liste"></ul>
       </div>
       <div>
-        <h2>Draft sans pick</h2>
+        <h2>Draft par joueurs</h2>
         <p class="indent">
           <em
-            >Ici c'est pour si vous ne souhaitez pas du tout choisir, le hasard
-            total!! Vous avez juste à définir avant qui est le Joueur 1</em
+            >Choisissez un nombre de factions par joueur. Vous avez juste à
+            définir avant qui est le Joueur 1</em
           >
           &#x1F631;
         </p>
         <form>
+          <label for="nb-faction">Nombre de factions par joueurs</label>
+          <select name="nb-faction" id="nb-faction">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
           <label for="players">Choisissez le nombre de joueur</label>
           <select id="players" name="players">
             <option value="2">2 joueurs</option>

@@ -35,7 +35,7 @@ function arrayRandomConstructor(nb, place) {
 
 function displayPlayers(nb, place) {
   let newh3 = document.createElement("h3"); //Pour afficher le numero du joueur
-  newh3.textContent = `Player ${nb} got factions :`;
+  newh3.textContent = `List of factions for player ${nb} :`;
   if (!place.firstChild) {
     place.append(newh3);
   } else {
@@ -102,7 +102,8 @@ random.addEventListener("click", (event) => {
 });
 
 let overwritten = document.querySelectorAll(".overwritten");
-let players = document.querySelector("select");
+let players = document.getElementById("players");
+let nbFactions = document.getElementById("nb-faction");
 let noPick = document.getElementById("no-pick");
 players.value = "autre";
 //sert a donner une fausse valeur afin de n'avoir aucune réponse selectionnée par défaut
@@ -132,7 +133,7 @@ noPick.addEventListener("click", (event) => {
         console.log(playersData.get(`titlePlayer${i}`));
         console.log(playersData.get(`player${i}`));
         displayPlayers(i, playersData.get(`titlePlayer${i}`));
-        arrayRandomConstructor(2, playersData.get(`player${i}`));
+        arrayRandomConstructor(nbFactions.value, playersData.get(`player${i}`));
       }
     }
   }
