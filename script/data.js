@@ -39,6 +39,16 @@ dataSet.set("marvel", [
   "Maîtres du mal",
   "Krees",
 ]);
+dataSet.set("disney", [
+  "Reine des Neiges",
+  "Big Hero 6",
+  "Le roi lion",
+  "Mulan",
+  "Aladdin",
+  "Les Mondes de Ralph",
+  "L'étrange Noël de monsieur Jack",
+  "La Belle et la Bête",
+]);
 dataSet.set("memePasMort", [
   "Fantômes",
   "Steampunk",

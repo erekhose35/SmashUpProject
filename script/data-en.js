@@ -39,6 +39,16 @@ dataSet.set("marvel", [
   "Masters of Evil",
   "Kree",
 ]);
+dataSet.set("disney", [
+  "Frozen",
+  "Big Hero 6",
+  "The Lion King",
+  "Mulan",
+  "Aladdin",
+  "Wreck-It Ralph",
+  "The Nightmare Before Christmas",
+  "Beauty & the Beast",
+]);
 dataSet.set("memePasMort", [
   "Ghosts",
   "Steampunks",
