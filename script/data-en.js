@@ -119,6 +119,7 @@ dataSet.set("wT2", [
   "Grimms'Fairy Tales",
   "Russian Fairy Tales",
 ]);
+dataSet.set("10th", ["Skeletons", "Mermaids", "World Champs"]);
 dataSet.set("geek", ["Geeks"]);
 dataSet.set("mouton", ["Sheeps"]);
 dataSet.set("dreamTeam", ["All-Stars"]);

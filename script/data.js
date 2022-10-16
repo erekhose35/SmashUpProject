@@ -119,6 +119,7 @@ dataSet.set("wT2", [
   "Contes de Grimm",
   "Contes Russes",
 ]);
+dataSet.set("10th", ["Squelettes", "Sirènes", "Champions du Monde"]);
 dataSet.set("geek", ["Geeks"]);
 dataSet.set("mouton", ["Moutons"]);
 dataSet.set("dreamTeam", ["Dream Team"]);
