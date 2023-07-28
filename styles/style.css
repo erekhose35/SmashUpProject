@@ -8,11 +8,15 @@
 .btn-blue:hover,
 #reload:hover {
   font-weight: bold;
+  margin: 10px 0px;
 }
 h1,
 h2,
 main label {
   margin: 10px;
+}
+ul {
+  list-style: none;
 }
 .i {
   background-color: #ffffff;
@@ -27,14 +31,14 @@ header {
   background: linear-gradient(45deg, #0000ff, #ffffff, #0000ff);
 }
 nav {
-  background: linear-gradient(-45deg, whitesmoke, #fae103);
+  background: whitesmoke;
   margin: 2px;
   border: solid 3px black;
   grid-area: n;
 }
 main {
   margin: 2px;
-  background: linear-gradient(45deg, whitesmoke, #fae103);
+  background: whitesmoke;
   border: solid 3px black;
   grid-area: c;
 }
@@ -60,6 +64,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "l c r";
+}
+a {
+  text-decoration: none;
 }
 footer a {
   color: whitesmoke;
@@ -118,8 +125,8 @@ label,
 @media screen and (min-width: 801px) {
   body {
     font-size: 20px;
-    background-image: url("../images/sansTexte.jpg");
-    margin: 20px;
+    /*background-image: url("../images/sansTexte.jpg");
+    margin: 20px;*/
     font-family: "Architects Daughter", cursive;
     display: grid;
     grid-template-columns: 1fr 3fr;
