@@ -20,7 +20,7 @@ dataSet.set("baseSet", [
   "Robots",
 ]);
 dataSet.set("munchkin", [
-  "Mages",
+  "Magiciens",
   "Prêtres",
   "Guerriers",
   "Nains",
@@ -111,7 +111,7 @@ dataSet.set("vousEnVoulezEncore", [
   "Cow-Boys",
   "Vikings",
 ]);
-dataSet.set("wT1", ["Sumo", "Luchadores", "Mousquetaires", "Mounties"]);
+dataSet.set("wT1", ["Sumo", "Luchadores", "Mousquetaires", "Police Montée"]);
 dataSet.set("wT2", [
   "Anansi",
   "Ancients Incas",
@@ -123,6 +123,6 @@ dataSet.set("10th", ["Squelettes", "Sirènes", "Champions du Monde"]);
 dataSet.set("geek", ["Geeks"]);
 dataSet.set("mouton", ["Moutons"]);
 dataSet.set("dreamTeam", ["Dream Team"]);
-dataSet.set("penguin", ["Manchots"]);
+dataSet.set("penguin", ["Pingouins"]);
 dataSet.set("goblins", ["Gobelins"]);
 dataSet.set("roundTable", ["Chevaliers de la Table Ronde"]);

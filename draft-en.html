@@ -40,11 +40,13 @@
   <body>
     <img class="i" src="images/playmateTitan.jpg" alt="playmateTitan" />
     <header>
-      <h1>Les Drafts</h1>
-      <button class="button">
-        <a href="./index.html">Back to the homepage</a>
-      </button>
-      <button id="reload" type="button" class="button">
+      <h1>Drafts</h1>
+      <ul class="navbar">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./draft.html">Français</a></li>
+        <li><a href="./draft-en.html">English</a></li>
+      </ul>
+      <button id="reload" type="button" class="btn-blue">
         Re-start a new draft
       </button>
     </header>
@@ -53,9 +55,6 @@
       <form>
         <fieldset>
           <legend>Choose your randomizer items :</legend>
-          <button type="button" id="selectAll" class="btn-blue right">
-            Select all
-          </button>
 
           <input type="checkbox" name="chk-baseSet" id="chkBaseSet" />
           <label for="chkBaseSet">Base Set</label><br />
@@ -99,7 +98,7 @@
           <label for="chkRessemblancesF">Cease and Desist</label><br />
 
           <input type="checkbox" name="chk-generation" id="chkGeneration" />
-          <label for="chkGeneration">What Were You Thinking?</label><br />
+          <label for="chkGeneration">What Were We Thinking?</label><br />
 
           <input type="checkbox" name="chk-japan" id="chkJapan" />
           <label for="chkJapan">Big in Japan</label><br />
@@ -131,7 +130,7 @@
           <label for="chkMouton">Sheeps</label><br />
 
           <input type="checkbox" name="chk-penguin" id="chkPenguin" />
-          <label for="chkPenguin">Penguin</label><br />
+          <label for="chkPenguin">Penguins</label><br />
 
           <input type="checkbox" name="chk-dreamTeam" id="chkDreamTeam" />
           <label for="chkDreamTeam">All Stars</label><br />
@@ -141,7 +140,9 @@
 
           <input type="checkbox" name="chk-roundTable" id="chkRoundTable" />
           <label for="chkRoundTable">Knights of the Round Table</label><br />
-
+          <button type="button" id="selectAll" class="btn-blue">
+            Select all
+          </button>
           <button type="button" id="create" class="btn-blue right">
             Create my list
           </button>

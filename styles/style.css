@@ -1,5 +1,5 @@
 .button {
-  background: linear-gradient(45deg, #fae103, #ffffff, #fae103);
+  background: linear-gradient(45deg, #8a8a89, #ffffff, #8a8a89);
   border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
@@ -55,11 +55,17 @@ p {
   text-decoration: underline;
 }
 .btn-blue {
-  background: linear-gradient(45deg, #0000ff, #ffffff, #0000ff);
+  background: linear-gradient(45deg, #4c4cfb, #ffffff, #4c4cfb);
   border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+}
+header {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 footer {
   font-family: "Oswald", sans-serif;
@@ -107,10 +113,10 @@ label,
     width: 100%;
     grid-template-rows: 1f 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "i"
       "h"
       "n"
       "m"
+      "i"
       "f";
   }
   .i,
@@ -144,10 +150,5 @@ label,
       "i h"
       "n c"
       "f f";
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
   }
 }
