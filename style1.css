@@ -19,33 +19,27 @@ ul {
   list-style: none;
 }
 .i {
+  background-color: #ffffff;
   padding: 4px;
   grid-area: i;
+  margin: 2px;
 }
 header {
   grid-area: h;
-  background-color: grey;
-  /*border: solid 3px black;
-  background: linear-gradient(45deg, #0000ff, #ffffff, #0000ff);*/
-}
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin: 0px;
-}
-h1 {
-  align-self: center;
+  border: solid 3px black;
+  margin: 2px;
+  background: linear-gradient(45deg, #0000ff, #ffffff, #0000ff);
 }
 nav {
   background: whitesmoke;
-  /*margin: 2px;
-  border: solid 3px black;*/
+  margin: 2px;
+  border: solid 3px black;
   grid-area: n;
 }
 main {
+  margin: 2px;
   background: whitesmoke;
-  /*border: solid 3px black;*/
+  border: solid 3px black;
   grid-area: c;
 }
 p {
@@ -62,9 +56,10 @@ p {
   margin: 10px;
 }
 footer {
-  font-family: "Oswald", sans-serif;
-  background-color: grey;
-  color: black;
+  margin: 2px;
+  background-color: blue;
+  color: whitesmoke;
+  border: solid 3px black;
   grid-area: f;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -73,11 +68,7 @@ footer {
 a {
   text-decoration: none;
 }
-header a,
 footer a {
-  color: black;
-}
-a:hover {
   color: whitesmoke;
 }
 .l {
@@ -134,8 +125,8 @@ label,
 @media screen and (min-width: 801px) {
   body {
     font-size: 20px;
-    /*background-image: url("../images/sansTexte.jpg");*/
-    margin: 0px;
+    /*background-image: url("../images/sansTexte.jpg");
+    margin: 20px;*/
     font-family: "Architects Daughter", cursive;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -147,7 +138,7 @@ label,
   }
   header {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
   }
 }
