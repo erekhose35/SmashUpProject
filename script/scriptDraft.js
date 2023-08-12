@@ -35,7 +35,7 @@ function arrayRandomConstructor(nb, place) {
 
 function displayPlayers(nb, place) {
   let newh3 = document.createElement("h3"); //Pour afficher le numero du joueur
-  newh3.textContent = `Liste de factions pour le joueur ${nb} :`;
+  newh3.textContent = `Le joueur ${nb} joue avec les factions :`;
   if (!place.firstChild) {
     place.append(newh3);
   } else {
@@ -48,6 +48,15 @@ function remove(place) {
     while (place.firstChild) {
       place.removeChild(place.firstChild);
     }
+  }
+}
+function disabledCheckBox() {
+  //pour griser la zone checkbox quanla liste est créée
+  let checkBoxes = document.querySelectorAll('fieldset input[type="checkbox"]');
+  let checkItems = document.querySelectorAll("fieldset label");
+  for (let i = 0; i < checkBoxes.length; i++) {
+    checkBoxes[i].disabled = !checkBoxes[i].disabled;
+    checkItems[i].className = "inactive";
   }
 }
 
@@ -68,6 +77,8 @@ create.addEventListener("click", () => {
   document.getElementById("create").classList.remove("btn-blue");
   document.getElementById("create").classList.add("button");
   create.innerHTML = "Liste créée";
+  disabledCheckBox();
+  document.getElementById("create").disabled = true;
   console.log(factions);
 });
 
@@ -102,8 +113,7 @@ random.addEventListener("click", (event) => {
 });
 
 let overwritten = document.querySelectorAll(".overwritten");
-let players = document.getElementById("players");
-let nbFactions = document.getElementById("nb-faction");
+let players = document.querySelector("select");
 let noPick = document.getElementById("no-pick");
 players.value = "autre";
 //sert a donner une fausse valeur afin de n'avoir aucune réponse selectionnée par défaut
@@ -133,7 +143,7 @@ noPick.addEventListener("click", (event) => {
         console.log(playersData.get(`titlePlayer${i}`));
         console.log(playersData.get(`player${i}`));
         displayPlayers(i, playersData.get(`titlePlayer${i}`));
-        arrayRandomConstructor(nbFactions.value, playersData.get(`player${i}`));
+        arrayRandomConstructor(2, playersData.get(`player${i}`));
       }
     }
   }
