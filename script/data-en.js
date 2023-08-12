@@ -121,7 +121,7 @@ dataSet.set("wT2", [
 ]);
 dataSet.set("10th", ["Skeletons", "Mermaids", "World Champs"]);
 dataSet.set("geek", ["Geeks"]);
-dataSet.set("mouton", ["Sheeps"]);
+dataSet.set("mouton", ["Sheep"]);
 dataSet.set("dreamTeam", ["All-Stars"]);
 dataSet.set("penguin", ["Penguins"]);
 dataSet.set("goblins", ["Goblins"]);
