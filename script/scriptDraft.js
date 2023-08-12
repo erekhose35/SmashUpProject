@@ -60,6 +60,14 @@ function disabledCheckBox() {
   }
 }
 
+let selectAll = document.getElementById("selectAll");
+selectAll.addEventListener("click", () => {
+  let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  for (let i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].checked = true;
+  }
+});
+
 var create = document.getElementById("create"); //recupère l id du bouton de création
 create.addEventListener("click", () => {
   factions = []; //réinitialisation a chaque clique
@@ -77,8 +85,11 @@ create.addEventListener("click", () => {
   document.getElementById("create").classList.remove("btn-blue");
   document.getElementById("create").classList.add("button");
   create.innerHTML = "Liste créée";
+  selectAll.classList.remove("btn-blue");
+  selectAll.classList.add("button");
   disabledCheckBox();
   document.getElementById("create").disabled = true;
+  selectAll.disabled = true;
   console.log(factions);
 });
 
@@ -153,12 +164,4 @@ noPick.addEventListener("click", (event) => {
 let reload = document.getElementById("reload");
 reload.addEventListener("click", () => {
   document.location.reload();
-});
-
-let selectAll = document.getElementById("selectAll");
-selectAll.addEventListener("click", () => {
-  let checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  for (let i = 0; i < checkboxes.length; i++) {
-    checkboxes[i].checked = true;
-  }
 });
