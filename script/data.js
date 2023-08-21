@@ -10,7 +10,7 @@ playersData.set("player4", document.getElementById("player4"));
 
 const dataSet = new Map();
 dataSet.set("baseSet", [
-  "Zombie",
+  "Zombies",
   "Aliens",
   "Ninjas",
   "Dinosaures",
@@ -37,7 +37,7 @@ dataSet.set("marvel", [
   "Hydra",
   "Sinistre 6",
   "Maîtres du mal",
-  "Krees",
+  "Kree",
 ]);
 dataSet.set("disney", [
   "Reine des Neiges",
@@ -51,7 +51,7 @@ dataSet.set("disney", [
 ]);
 dataSet.set("memePasMort", [
   "Fantômes",
-  "Steampunk",
+  "Steampunks",
   "Plantes Carnivores",
   "Cavalerie Ours",
 ]);
@@ -118,6 +118,12 @@ dataSet.set("wT2", [
   "Voyageurs Polynésiens",
   "Contes de Grimm",
   "Contes Russes",
+]);
+dataSet.set("emd", [
+  "Action Heroes",
+  "Backtimers",
+  "Extramorphs",
+  "Wraith Thrustlers",
 ]);
 dataSet.set("10th", ["Squelettes", "Sirènes", "Champions du Monde"]);
 dataSet.set("geek", ["Geeks"]);
