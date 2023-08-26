@@ -40,8 +40,8 @@ dataSet.set("marvel", [
   "Kree",
 ]);
 dataSet.set("disney", [
-  "Reine des Neiges",
-  "Big Hero 6",
+  "La Reine des Neiges",
+  "Les nouveaux héros (Big Hero 6)",
   "Le roi lion",
   "Mulan",
   "Aladdin",
@@ -123,7 +123,7 @@ dataSet.set("emd", [
   "Action Heroes",
   "Backtimers",
   "Extramorphs",
-  "Wraith Thrustlers",
+  "Wraithrustlers",
 ]);
 dataSet.set("10th", ["Squelettes", "Sirènes", "Champions du Monde"]);
 dataSet.set("geek", ["Geeks"]);
@@ -132,3 +132,4 @@ dataSet.set("dreamTeam", ["Dream Team"]);
 dataSet.set("penguin", ["Pingouins"]);
 dataSet.set("goblins", ["Gobelins"]);
 dataSet.set("roundTable", ["Chevaliers de la Table Ronde"]);
+dataSet.set("teens", ["Ados"]);

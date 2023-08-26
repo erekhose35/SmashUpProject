@@ -123,7 +123,7 @@ dataSet.set("emd", [
   "Action Heroes",
   "Backtimers",
   "Extramorphs",
-  "Wraith Thrustlers",
+  "Wraithrustlers",
 ]);
 dataSet.set("10th", ["Skeletons", "Mermaids", "World Champs"]);
 dataSet.set("geek", ["Geeks"]);
@@ -132,3 +132,4 @@ dataSet.set("dreamTeam", ["All-Stars"]);
 dataSet.set("penguin", ["Penguins"]);
 dataSet.set("goblins", ["Goblins"]);
 dataSet.set("roundTable", ["Knights of the Round Table"]);
+dataSet.set("teens", ["Teens"]);
