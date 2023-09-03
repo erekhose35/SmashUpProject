@@ -124,7 +124,8 @@ random.addEventListener("click", (event) => {
 });
 
 let overwritten = document.querySelectorAll(".overwritten");
-let players = document.querySelector("select");
+let players = document.getElementById("players");
+let nbFactions = document.getElementById("nb-faction");
 let noPick = document.getElementById("no-pick");
 players.value = "autre";
 //sert a donner une fausse valeur afin de n'avoir aucune réponse selectionnée par défaut
@@ -133,17 +134,17 @@ noPick.addEventListener("click", (event) => {
   event.preventDefault();
   if (factions.length === 0) {
     alert(
-      'Il faut d\'abord selectionner les factions du randomizer! Pour cela il faut appuyer sur le bouton "Créer ma liste"'
+      'Tu dois d abord sélectionner les factions présentes dans ton randomizer! Pour le faire, selectionne et valide en appuyant sur le bouton "Créer ma liste".'
     );
   } else if (nb > factions.length) {
     alert(
-      "Il n'y a plus assez de factions en stock! Cliquez sur recommencer un nouveau draft"
+      "Il n'y a pas assez de factions en stock, clique sur 'Recommencer un nouveau draft' afin de recréer votre liste."
     );
   } else {
     let nbPlayers = parseInt(players.value);
 
     if (isNaN(nbPlayers)) {
-      alert("Choisissez un nombre de joueur dans le menu déroulant");
+      alert("Choisi un nombre de joueur dans le menu déroulant");
     } else {
       for (let j = 1; j <= 4; j++) {
         console.log("remove");
@@ -154,7 +155,7 @@ noPick.addEventListener("click", (event) => {
         console.log(playersData.get(`titlePlayer${i}`));
         console.log(playersData.get(`player${i}`));
         displayPlayers(i, playersData.get(`titlePlayer${i}`));
-        arrayRandomConstructor(2, playersData.get(`player${i}`));
+        arrayRandomConstructor(nbFactions.value, playersData.get(`player${i}`));
       }
     }
   }
