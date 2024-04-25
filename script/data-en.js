@@ -108,7 +108,7 @@ dataSet.set("year70th", [
 dataSet.set("vousEnVoulezEncore", [
   "Ancient Egyptians",
   "Samouraï",
-  "Cow-Boys",
+  "Cowboys",
   "Vikings",
 ]);
 dataSet.set("wT1", ["Sumo", "Luchadores", "Musketeers", "Mounties"]);
