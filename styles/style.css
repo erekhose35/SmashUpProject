@@ -54,6 +54,11 @@ p {
 .underline {
   text-decoration: underline;
 }
+.event {
+  background: linear-gradient(45deg, #4c4cfb, #ffffff, #4c4cfb);
+  border: 2px solid black;
+  border-radius: 10px;
+}
 .btn-blue {
   background: linear-gradient(45deg, #4c4cfb, #ffffff, #4c4cfb);
   border: 2px solid black;
