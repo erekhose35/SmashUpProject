@@ -9,6 +9,9 @@ We have 2 languages version :
 - English
 - French
 
+##Evolution
+The 2nd version will add the customland option
+
 ##Front End : WIP
 
 For the moment, the style is all made with CSS
