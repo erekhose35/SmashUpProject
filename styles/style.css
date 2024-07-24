@@ -90,6 +90,7 @@ footer a {
 }
 a:hover {
   color: whitesmoke;
+  background-color: grey;
 }
 .l {
   grid-area: l;

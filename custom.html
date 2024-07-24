@@ -37,5 +37,199 @@
       gtag("config", "G-81JFNRCY06");
     </script>
   </head>
-  <body></body>
+  <body>
+    <body>
+    <img class="i" src="images/playmateTitan.jpg" alt="playmateTitan" />
+    <header>
+      <h1>Customland</h1>
+      <ul class="navbar">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./draft.html">Français</a></li>
+        <li><a href="./draft-en.html">English</a></li>
+        <li><a href="./custom.html">Customland</a></li>
+      </ul>
+      <button id="reload" type="button" class="btn-blue">
+        Re-start a new draft
+      </button>
+    </header>
+
+    <nav>
+      <form>
+        <fieldset>
+          <legend>Custom items :</legend>
+
+          <input type="checkbox" name="chk-d&d" id="chkD&D" />
+          <label for="chkD&D">Dungeon & Dragons</label><br />
+
+          <input type="checkbox" name="chk-starWars" id="chkStarWars" />
+          <label for="chkStarWars">Star Wars</label><br />
+
+          <input type="checkbox" name="chk-downtown" id="chkDowntown" />
+          <label for="chkDowntown">Downtown Smashopolis</label><br />
+
+          <input type="checkbox" name="chk-bgBonanza" id="chkBgBonanza" />
+          <label for="chkBgBonanza">Board Game Bonanza</label><br />
+
+          <input type="checkbox" name="chk-warcraft" id="chkWarcraft" />
+          <label for="chkWarcraft">Warcraft 3 Expansion</label><br />
+
+         
+          <button type="button" id="selectAll" class="btn-blue">
+            Select all
+          </button>
+          <button type="button" id="create" class="btn-blue right">
+            Create my list
+          </button>
+        </fieldset>
+      </form>
+    </nav>
+    <main>
+      <div>
+        <h2>Custom Factions</h2>
+        <p class="indent">
+          <em>
+            The custom factions offered are based on the factions present on the site: <a
+              href="https://smash-up-custom-factions.fandom.com/wiki/Smash_Up_Custom_Factions_Wiki"
+              target="_blank"
+              >Wiki : Smash Up Custom Faction
+            </a> (site powered by the Smash Up community)
+          </em>
+          &#x1F60F;
+        </p>
+         <h2>Global draft</h2>
+        <p class="indent">
+          <em>
+            Write the number of factions you want in your draft, the interest
+            here being to narrow the choice before choosing your factions!
+            Reminder of the rule for a 2 game: P1 chooses a faction, P2 chooses
+            2 factions and P1 chooses a faction. Personal, I like to precede
+            this choice with one or two rounds of ban! It's your turn find the
+            format that suits you best
+          </em>
+          &#x1F60F;
+        </p>
+        <form>
+          <label for="nb">Number of faction you want in your Draft</label>
+          <input type="text" id="nb" name="nb" />
+          <button type="button" class="btn-blue" id="random">Randomize</button>
+        </form>
+        <p id="title"></p>
+        <ul id="liste"></ul>
+      </div>
+      <div>
+        <h2>Draft per player</h2>
+        <p class="indent">
+          <em
+            >Choose a number of factions per player. You just have to define
+            before who is Player 1
+          </em>
+          &#x1F631;
+        </p>
+        <form>
+          <label for="nb-faction">Number of factions per player</label>
+          <select name="nb-faction" id="nb-faction">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option></select
+          ><br />
+          <label for="players">Choose the number of players</label>
+          <select id="players" name="players">
+            <option value="2">2 players</option>
+            <option value="3">3 players</option>
+            <option value="4">4 players</option>
+          </select>
+          <button id="no-pick" class="btn-blue">Start a reseach</button>
+        </form>
+        <p id="title-p1" class="overwritten"></p>
+        <ul id="player1" class="overwritten"></ul>
+        <p id="title-p2" class="overwritten"></p>
+        <ul id="player2" class="overwritten"></ul>
+        <p id="title-p3" class="overwritten"></p>
+        <ul id="player3" class="overwritten"></ul>
+        <p id="title-p4" class="overwritten"></p>
+        <ul id="player4" class="overwritten"></ul>
+      </div>
+    </main>
+    <footer>
+      <h4 class="l">Links for fans :</h4>
+      <div class="c">
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/218243058629614"
+              target="_blank"
+              >Facebook : Smash Up France</a
+            >
+          </li>
+          <li>
+            <a href="https://discord.gg/JKYcDPEa" target="_blank"
+              >Discord : Smash Up France</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://smash-up.fandom.com/fr/wiki/Wiki_Smash_Up"
+              target="_blank"
+              >Wiki : Smash Up France</a
+            >
+          </li>
+          <li>
+            <a href="https://iello.fr/fr/fiche/smash-up" target="_blank"
+              >Boutique : Iello</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="r">
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/@CrankItUp" target="_blank"
+              >Crank it Up : Youtube Channel</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/groups/alderac.boardgames.smashup"
+              target="_blank"
+              >Facebook : Smashposting</a
+            >
+          </li>
+          <li>
+            <a href="https://discord.gg/Gs5HPNuy" target="_blank"
+              >Discord : Smash Up</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://smashup.fandom.com/wiki/SmashUp_Wiki"
+              target="_blank"
+              >Wiki : Smash Up
+            </a>
+          </li>
+          <li>
+            <a href="https://www.smashupdata.com/" target="_blank"
+              >For data fans</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://smash-up-custom-factions.fandom.com/wiki/Smash_Up_Custom_Factions_Wiki"
+              target="_blank"
+              >Wiki : Smash Up Custom Faction
+            </a>
+          </li>
+          <li>
+            <a href="https://alderacstore.com/smash-up/" target="_blank"
+              >Store : AEG</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p>All right reserved. Made by <span class="bold">Erekhose 2022</span></p>
+    </footer>
+    <script src="script/data-en.js"></script>
+    <script src="script/scriptDraft-en.js"></script>
+  </body>
 </html>
