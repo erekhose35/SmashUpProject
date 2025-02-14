@@ -82,6 +82,8 @@ const liste = document.getElementById("liste");
 const titleCustom = document.getElementById("title-custom");
 const listCustom = document.getElementById("list-custom");
 const nb = 10;
+const vanillaMessage = " Official factions : ";
+const customMessage = " Custom factions : ";
 
 function remove(place) {
   //Pour effacer les lignes ajoutées précédemment
@@ -97,24 +99,24 @@ function elemAleatoire(tab) {
   return tab.splice(randomIndex, 1)[0];
 }
 
-function arrayRandomConstructor(nb, place) {
+function arrayRandomConstructor(nb, place, arrayFactions, message) {
   remove(place);
-  if (nb > factions.length) {
+  if (nb > arrayFactions.length) {
     alert(
       "There are not enough factions left in stock! Click on Home to start again"
     );
   } else {
     let newh3 = document.createElement("h3"); //Pour afficher le titre
-    newh3.textContent = `The ${nb} factions drawn are :`;
-    if (!title.firstChild) {
-      title.append(newh3);
+    newh3.textContent = nb + message;
+    if (!place.firstChild) {
+      place.append(newh3);
     } else {
-      title.firstChild.remove(newh3);
-      title.append(newh3);
+      place.firstChild.remove(newh3);
+      place.append(newh3);
     }
 
     for (let i = 0; i < nb; i++) {
-      draft[i] = elemAleatoire(factions); // crée un nouveau tableau aléatoire
+      draft[i] = elemAleatoire(arrayFactions); // crée un nouveau tableau aléatoire
       let newli = document.createElement("li"); //affiche chaque faction tirée au sort
       newli.textContent = draft[i];
       place.append(newli);
@@ -124,6 +126,7 @@ function arrayRandomConstructor(nb, place) {
 }
 var create = document.getElementById("tournament"); //recupère l id du bouton de création
 tournament.addEventListener("click", () => {
-  arrayRandomConstructor(nb, liste);
+  arrayRandomConstructor(nb, liste, factions, vanillaMessage);
+  arrayRandomConstructor(nb, listCustom, customGroup, customMessage);
   console.log(factions);
 });
