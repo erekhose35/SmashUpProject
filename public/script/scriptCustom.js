@@ -65,6 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
     restartBtn.addEventListener('click', function () {
       window.location.reload();
     });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+      }
+    });
+    // Empêche le comportement par défaut de la touche "Enter" dans les formulaires
   }
 });
 //class qui sert a stocker les id de chaque boite et le tableau de faction qu elle contient
