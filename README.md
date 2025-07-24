@@ -9,17 +9,15 @@ We have 2 languages version :
 - English
 - French
 
-##Evolution
-The 2nd version will add the customland option
+##Second version in line
+The 2nd version add the customland option
+Only in English
+Maybe I will add a french version
 
-##Front End : WIP
-
-For the moment, the style is all made with CSS
-
-Project : use a framework CSS (Bootstrap ?)
+##Front End : Bootstrap with css 
 
 ##Back end : Project
 
 For the moment, no Back End at all : all it made with JavaScript
 
-Project : create a user account with php and mysql to save datas user
+Project : create a user account with node.js and sqlite to save datas user to customize the customland
