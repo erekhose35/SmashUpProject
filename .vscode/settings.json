@@ -1,0 +1,15 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.semi": true,
+  "prettier.trailingComma": "es5",
+  "json.schemas": [
+    {
+      "fileMatch": ["/myfile"],
+      "url": "schemaURL"
+    }
+  ]
+}
