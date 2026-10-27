@@ -78,9 +78,11 @@ dataSet.set('ludichrisness', [
 ]);
 dataSet.set('sirErrant', [
   'Ace Attorneys',
+  'Apothecaries',
   'Family Recipes',
   'Film Noir',
   'Jazz Singers',
+  'Kingdom Hearts',
   'Musical Theatre',
   'Nobles',
   'Phantom Thieves',
@@ -101,7 +103,11 @@ dataSet.set('phantomic109', [
   'AIR',
   'Ancient Romans',
   'Fantasy Heroes',
+  'Gentleman Thieves',
+  'Kanon',
   'The Legend of Zelda (phantomic109)',
+  'Rewrite',
+  'Saskatchewan',
 ]);
 dataSet.set('sDNuKe', ['Aiur Protoss', 'Nerazim Protoss']);
 dataSet.set('berryl', [
@@ -184,8 +190,10 @@ dataSet.set('sonus', [
   'Card Slingers',
   'Fast Food',
   'Final Fantasy Tactics: Jobs',
+  'Final Fantasy Tactics : Lucavi',
   'Mountain Dwarves',
   'Paladins (Sonus)',
+  'Sand Realm',
   'Space Realm',
   'Storm Orcs',
   'Tau',
@@ -194,8 +202,25 @@ dataSet.set('sonus', [
 ]);
 dataSet.set('bae_gel', [
   'Animal Crossing',
+  'Bananza Elders',
+  'Beachcombers',
+  'EarthBound',
+  'Inside Out',
+  'Kirby',
+  'Kongs',
+  'Kremlings',
   'The Legend of Zelda (bae_gel)',
+  'Looney Toons',
+  'Metroid (bae_gel)',
+  'Muppets',
+  'Ratatouille',
+  'Sonic the Hedgehog',
+  'Splatoon',
+  'Star Fox',
   'Super Mario Bros.',
+  'Toy Story',
+  'Ultra Beasts',
+  'VoidCo',
 ]);
 dataSet.set('lonan', [
   'Avatar the Last Wind Worker',
@@ -243,16 +268,7 @@ dataSet.set('lonan', [
   'Undead Scourge',
 ]);
 dataSet.set('bandit', ['Babies', 'Centurions', 'LEGO', 'Ori']);
-dataSet.set('colinusHaggardus', [
-  'Bad Boys',
-  'Brink of the Future',
-  'Noble Dogs',
-  'Primate Defense League',
-  'The Simpsons (Colinus)',
-  'Stickmen',
-  'TrollHunters',
-  'Wolverine Corps.',
-]);
+dataSet.set('whenrix', ['Brainrot', 'Grey Goo', "Zomboss's Horde"]);
 dataSet.set('andIQuote', [
   'Ancient Assyrians',
   'Breakfast Cereal Mascots',
@@ -274,12 +290,15 @@ dataSet.set('andIQuote', [
   'X-Nauts',
 ]);
 dataSet.set('onassi', [
+  'Aviators',
   'Brewers',
   'Cosmoballers',
+  'Cute Plants',
   "Jack O'Lanterns",
   'Jellyfish',
   'Loopers',
   'Lunatics',
+  'Mascots',
   'Olympians',
   'Paladins (Onassi)',
   'Psychics',
@@ -289,6 +308,7 @@ dataSet.set('onassi', [
   'Space Commandos',
   'Tattooists',
   'Wingspan',
+  'Yulefiends',
 ]);
 dataSet.set('crossfire7', [
   'Cave Men',
@@ -317,7 +337,12 @@ dataSet.set('lime17', [
   'Team Z',
   'Vultures',
 ]);
-dataSet.set('nanpaCrown', ['Electric Elementals', 'Mega Man', 'Trolls']);
+dataSet.set('nanpaCrown', [
+  'Electric Elementals',
+  'Kids',
+  'Mega Man',
+  'Trolls',
+]);
 dataSet.set('sibeskiaFaithful', [
   'Emu Army',
   'Fellowship of the Kiwi',
@@ -327,7 +352,12 @@ dataSet.set('sibeskiaFaithful', [
   'World Archery',
 ]);
 dataSet.set('captainCardboard', ['Bees', 'Boxers', 'Voidborn']);
-dataSet.set('wisdomEnvy', ['Final Fantasy IX', 'Weirdos']);
+dataSet.set('wisdomEnvy', [
+  'Bees (WisdomEnvy)',
+  'Final Fantasy IX',
+  'Viruses',
+  'Weirdos',
+]);
 dataSet.set('drTengu', [
   'Giant Mechs',
   'Kaiju (DrTengu)',
@@ -371,12 +401,10 @@ dataSet.set('multipleAuthors', [
   'Djinni',
 ]);
 dataSet.set('oneFactionAuthor', [
-  'Rival Tech',
-  'Slashers',
-  'Squirrel',
+  'Noxus',
   'Vs. Spiders',
-  'Whales',
   "Dante's Inferno",
   'Pandaren',
   'Calaveras',
+  'From',
 ]);
