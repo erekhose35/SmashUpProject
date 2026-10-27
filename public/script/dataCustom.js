@@ -12,19 +12,25 @@ const dataSet = new Map();
 dataSet.set('lordMewtwo73', [
   '7 Wonders',
   '1960s Batman',
+  'Allomancers',
   'Ancient Duel Deities',
+  'Basejoggers',
+  'Black Order (LordMewTwo)',
   'Bounty Hunters',
   'Clone Army',
   'Cooking Mama',
   'C.R.O.W.S.',
+  'Deadpool',
   'Empire, The',
   'Fortune Tellers',
   'Golden Sun',
-  'Guardians of the Galaxy',
+  'Guardians of the Galaxy (LordMewTwo)',
   'Japanese Poets',
   'Jedi Order',
+  'Meeseeks',
   "Mewtwo & Mashley's Mechanic Menagerie",
   'Mind Flayers',
+  'Ojamas',
   'Outer Ones',
   'Petrichor V',
   'Physicists',
@@ -33,6 +39,7 @@ dataSet.set('lordMewtwo73', [
   'Separatists',
   'Smash (Up) Mouth',
   'Sphinxes',
+  'Spooklear Phycisists',
   'Stegos',
   'Survivors (RoR1)',
   'Symbiotes',
@@ -40,15 +47,21 @@ dataSet.set('lordMewtwo73', [
 dataSet.set('ludichrisness', [
   'Aboleths',
   'Archaeologists',
+  'BBEGs',
+  'Bloodborne',
+  'Dark Knights',
   'Dark Souls',
   'Diabolists',
   'Duelists',
+  'Dungeoneers',
   'FernGully',
   'Gorgons',
   'Inception',
   'Metroid',
+  'Moon Realm',
   'Necrodancers',
   'Occult Investigators',
+  'Octopuses',
   'Oozes',
   'Painters',
   'Pastry Chefs',
@@ -61,6 +74,7 @@ dataSet.set('ludichrisness', [
   'Wakanda',
   'Warmages',
   'Witches',
+  'Witch Doctors',
 ]);
 dataSet.set('sirErrant', [
   'Ace Attorneys',
@@ -78,8 +92,10 @@ dataSet.set('sirErrant', [
 ]);
 dataSet.set('justLazerDGE', [
   'Adventurers',
+  'Charlotte',
   "Five Nights at Freddy's",
   'Lobotomy Corporation',
+  'Magical Girls from a Forgotten Kingdom',
 ]);
 dataSet.set('phantomic109', [
   'AIR',
@@ -89,12 +105,15 @@ dataSet.set('phantomic109', [
 ]);
 dataSet.set('sDNuKe', ['Aiur Protoss', 'Nerazim Protoss']);
 dataSet.set('berryl', [
+  '7 deadly Sins',
+  'A-Men',
   'Alchemists',
   'Astronomers',
   'Blacksmiths',
   'Colosseum of Fools',
   'Diamond is Unbreakable',
   'Dream Warriors',
+  'Dreamlanders',
   'Druids',
   'Enchanters',
   'Engineers',
@@ -104,6 +123,7 @@ dataSet.set('berryl', [
   'The Grimm Troupe',
   'Hackers',
   'Illusionists',
+  'Jackals',
   'Kamar-Taj',
   'Liches',
   'Lumas',
@@ -112,18 +132,28 @@ dataSet.set('berryl', [
   'Oracles',
   'Pale Court',
   'Pandas',
+  'Paparazzi',
   'Phoenixes',
   'Plague Doctors',
   'Quantum Physicists',
   'Rangers',
   'Rappers',
   'Rebel Alliance (Berryl)',
+  'Scultures',
   'Shadows',
   'Soda',
+  'Sorcerers',
   'Soul Sanctum',
   'Stardust Crusaders',
   'Ticket to Ride',
+  'Twilight Zone',
+  'Undertale',
+  'Void Realm',
   'Vessels',
+  'Water Gods',
+  'X-Files',
+  'Yuan Ti',
+  'Zebras',
 ]);
 dataSet.set('captainCosmic', [
   'Amnesia',
@@ -132,6 +162,7 @@ dataSet.set('captainCosmic', [
   'Farm Fighters',
   'The Godfather',
   'Golfers',
+  'Grimprowlers',
   'Ice Golems',
   'Mad Chemists',
   'Mariachi',
@@ -145,6 +176,7 @@ dataSet.set('captainCosmic', [
   'Trebuchets',
   'Urban Architects',
   'Wretched Pigmen',
+  'Wyvern Huntsmen',
 ]);
 dataSet.set('sonus', [
   'Angels',
@@ -222,9 +254,11 @@ dataSet.set('colinusHaggardus', [
   'Wolverine Corps.',
 ]);
 dataSet.set('andIQuote', [
+  'Ancient Assyrians',
   'Breakfast Cereal Mascots',
   'Caper Crew',
   'Clue',
+  'Diglett',
   'Doctor Who',
   'Final Fantasy V',
   'Geomancers',
@@ -256,22 +290,33 @@ dataSet.set('onassi', [
   'Tattooists',
   'Wingspan',
 ]);
-dataSet.set('awesom360', ['Calaveras (formerly Skeletons)', 'Djinni']);
 dataSet.set('crossfire7', [
   'Cave Men',
   'The Sword in the Stone (Crossfire7)',
   'Terminators',
+  'Lopunny',
 ]);
 dataSet.set('gammaMania', [
-  'Centaurs (Munchkin)',
+  'April Fools',
+  'Centaurs',
   'Kart Racers',
   'Kobolds',
-  'Minstrels',
+  'Bards (GammaMania)',
   'Team Fortress 2',
 ]);
 dataSet.set('ludum', ['Chaos Gods', 'Monopoly', 'Necrons', 'Tyranids']);
+dataSet.set('inushiba', ['Blessed Isles', 'Baristas']);
 dataSet.set('greySherpa', ['Chess', 'Coven', 'Plumber Sisters', 'Eggs']);
-dataSet.set('lime17', ['Chrono Drifters', 'Gacha Gamers', 'Pokémon', 'Team Z']);
+dataSet.set('lime17', [
+  'Chrono Drifters',
+  'Gacha Gamers',
+  'Guren Lagann',
+  'Jujutsu Special Grades',
+  'Pokémon',
+  'Qilin',
+  'Team Z',
+  'Vultures',
+]);
 dataSet.set('nanpaCrown', ['Electric Elementals', 'Mega Man', 'Trolls']);
 dataSet.set('sibeskiaFaithful', [
   'Emu Army',
@@ -281,26 +326,49 @@ dataSet.set('sibeskiaFaithful', [
   "Ranger's Apprentice: The Main Characters",
   'World Archery',
 ]);
-dataSet.set('geek13579', ['Encanto', 'Gladiators']);
+dataSet.set('captainCardboard', ['Bees', 'Boxers', 'Voidborn']);
 dataSet.set('wisdomEnvy', ['Final Fantasy IX', 'Weirdos']);
-dataSet.set('eisbread', ['Fishermen', 'Hibernators']);
+dataSet.set('drTengu', [
+  'Giant Mechs',
+  'Kaiju (DrTengu)',
+  'Magicals Girls (DrTengu)',
+  'Samurai (DrTengu)',
+  'Yokai',
+  'Black Order',
+  'Brotherhood of Mutants',
+  'Fantastic Four',
+  'Guardians of the Galaxy (DrTengu)',
+  'Heralds of Galactus',
+  'Midnight Suns',
+  'The Cabal',
+  'X-Men',
+  'Ancient Sumerians',
+  'Aztecs',
+  'Celts',
+  'Mongolian Empire',
+  'Romans',
+  'Ninja Gaiden',
+]);
 dataSet.set('multipleAuthors', [
   'Misfits',
   'Tacolytes',
   'Tom Bombadil',
   'Narwhals',
   'Guardians of the Globe',
+  'Farmers',
   'Footballers',
   'Redwallers',
   'Iconoclasts',
   'Shonen Fighters',
-  'Bards',
+  'Scott Pilgrim Drops the Base',
+  'Bards (Multiple Autors)',
   'Mountaineers',
   'Circus Performers',
   'Colour Out Of Space, The',
   'Straw Hats',
   'Double Agents',
   'Tuckskin Rikers',
+  'Djinni',
 ]);
 dataSet.set('oneFactionAuthor', [
   'Rival Tech',
@@ -309,6 +377,6 @@ dataSet.set('oneFactionAuthor', [
   'Vs. Spiders',
   'Whales',
   "Dante's Inferno",
-  'Baristas',
-  'Boxers',
+  'Pandaren',
+  'Calaveras',
 ]);
